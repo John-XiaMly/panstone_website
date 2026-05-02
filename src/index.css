@@ -214,6 +214,7 @@ html, body, #root {
   min-height: 100%;
   overflow-x: hidden; /* 徹底杜絕左右黑邊與捲軸 */
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .mesh-gradient-bg {

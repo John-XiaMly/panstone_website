@@ -41,7 +41,7 @@ export const ServiceSection = () => {
                     viewport={{once: true}}
                     className="text-center mb-24"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">美好的服務體驗</h2>
+                    <h2 className="text-4xl md:text-5xl text-white font-bold mb-6">美好的服務體驗</h2>
                     <div className="h-1 w-20 bg-cyan-500 mx-auto mb-6 rounded-full"></div>
                     <p className="text-white text-lg max-w-2xl mx-auto opacity-80">
                         從第一次對話開始，我們就為您的技術架構做長遠規劃，確保系統具備高擴展性。

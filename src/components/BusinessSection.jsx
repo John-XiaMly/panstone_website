@@ -12,32 +12,29 @@ export const BusinessSection = () => {
     const BUSINESS_SOLUTIONS = [
         {
             id: '01',
-            title: '入口：品牌形象與通路接觸點',
-            subtitle: 'Brand Identity & Web Presence',
-            desc: '我們協助您建立統一的官方網站形象，打造具備品牌辨識度的數位門面。透過深度的 SEO 關鍵字優化與 SEM 廣告策略，結合社群媒體多元流量入口，我們不只為您架設網站，更在數位世界建立精準引導顧客的導航系統，為品牌長遠發展奠定厚實根基。',
-            // 穩定連結 1：科技辦公/網頁設計感
+            title: '第一章：從寂靜到綻放，建立您的數位門戶',
+            subtitle: 'The First Impression',
+            desc: '在浩瀚的數位海域中，優秀的品牌不應被埋沒。我們專注於為企業打造最具溫度的「第一接觸點」，不僅是美觀的視覺呈現，更是一場關於品牌價值的深度對話。透過精準的搜尋佈局，讓您的潛在客戶在最需要的時刻，第一眼就與您的品牌相遇，開啟無限可能的對話窗。',
             image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
-            tags: ['SEO 優化', '品牌官網', '多端適應'],
+            tags: ['品牌辨識', '精準導入', '全平台適配'],
             color: 'from-cyan-500/20 to-transparent'
         },
         {
             id: '02',
-            title: '內部管理：CRM 系統與數據優化',
-            subtitle: 'Efficiency & CRM Solutions',
-            desc: '將繁瑣的商業邏輯轉化為高效能管理工具。我們開發的客製化 CRM 系統能深入剖析客戶行為數據，實現精準行銷與高效的客戶關係維護。透過優化內部業務流程、提升團隊協作效率與訂單處理速度，利用自動化工作流輔助決策，讓您的企業營運徹底數位化與高產能化。',
-            // 穩定連結 2：數據圖表/管理感
+            title: '第二章：轉化繁瑣為純粹，賦能企業運轉核心',
+            subtitle: 'The Heart of Operation',
+            desc: '真正的成長來自於內部的從容。我們將混亂的數據碎片轉化為清晰的決策指引，把重複的行政庶務交付給智能自動化。透過深度梳理您的核心業務，我們為您構建一套會思考的管理系統，讓您的團隊能從日常雜事中解放，將精力聚焦在最具創造力的客戶關係與戰略決策上。',
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
-            tags: ['數據分析', '流程自動化', '高效協作'],
+            tags: ['營運自動化', '決策智慧化', '內部賦能'],
             color: 'from-blue-500/20 to-transparent'
         },
         {
             id: '03',
-            title: '外部曝光：行銷服務與全域推廣',
-            subtitle: 'Market Exposure & Growth',
-            desc: '透過多元化的數位行銷策略，全面提升品牌的市場能見度與客流量。從精準的數據化廣告投遞、內容行銷策略到 KOL 與媒體資源媒合，我們協助您在合適的通路發聲。結合實體或線上活動企劃，極大化品牌聲量，將流量轉化為實際業績，創造持續且可觀的商業成長與價值。',
-            // 穩定連結 3：行銷/成長/團隊感
+            title: '第三章：突破侷限，共創持續生長的價值',
+            subtitle: 'Sustainable Growth',
+            desc: '商業的終點從不是成交，而是長遠的共鳴。我們協助品牌突破既有的市場邊界，利用全域行銷策略將短暫的流量沈澱為誠摯的品牌追隨者。這是一場動態的增長實驗，我們與您並肩作戰，在多變的市場趨勢中尋找最穩定的成長曲線，確保品牌在數位浪潮中始終保持旺盛的生命力。',
             image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop',
-            tags: ['廣告投遞', '內容行銷', '市場拓展'],
+            tags: ['全域增長', '價值傳遞', '市場突圍'],
             color: 'from-purple-500/20 to-transparent'
         }
     ];
@@ -46,7 +43,7 @@ export const BusinessSection = () => {
         <section id="business" className="max-w-7xl mx-auto px-6 py-32 relative z-10">
             <motion.div initial="hidden" whileInView="visible" viewport={{once: true, margin: "-100px"}}
                         variants={fadeInVariant} className="text-center mb-32">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">企業數位整合方案</h2>
+                <h2 className="text-4xl md:text-5xl text-white font-bold mb-6">企業數位整合方案</h2>
                 <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
                     針對成長型企業設計，我們串聯品牌門面、數據管理到市場增長，<br
                     className="hidden md:block"/> 提供全方位的數位轉型支撐。
@@ -109,13 +106,13 @@ export const BusinessSection = () => {
                                 ))}
                             </div>
 
-                            <div className="pt-6">
-                                <a href="#contact"
-                                   className="inline-flex items-center gap-2 text-white font-bold group">
-                                    了解更多建置細節 <span
-                                    className="text-cyan-500 group-hover:translate-x-2 transition-transform">→</span>
-                                </a>
-                            </div>
+                            {/*<div className="pt-6">*/}
+                            {/*    <a href="#contact"*/}
+                            {/*       className="inline-flex items-center gap-2 text-white font-bold group">*/}
+                            {/*        了解更多建置細節 <span*/}
+                            {/*        className="text-cyan-500 group-hover:translate-x-2 transition-transform">→</span>*/}
+                            {/*    </a>*/}
+                            {/*</div>*/}
                         </div>
                     </motion.div>
                 ))}

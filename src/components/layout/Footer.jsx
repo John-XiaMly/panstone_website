@@ -4,8 +4,8 @@ export const Footer = () => {
     return (
         <footer id="contact" className="relative py-10 border-t border-white/10 overflow-hidden text-center">
             <div className="max-w-4xl mx-auto px-6 relative z-10">
-                <h3 className="text-4xl md:text-6xl font-bold mb-8">準備好開始了嗎？</h3>
-                <p className="text-white mb-12 text-lg opacity-80">免費初次諮詢，讓我們一起定義您的數位未來</p>
+                <h3 className="text-4xl md:text-6xl font-bold mb-8">準備好開始賺錢了嗎？</h3>
+                <p className="text-white mb-12 text-lg opacity-80">免費諮詢，讓我們一起定義您的數位未來</p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <a href="mailto:contact@panstone.com"
                        className="px-12 py-5 bg-white text-black font-black rounded-2xl hover:bg-cyan-400 hover:scale-105 active:scale-95 transition-all shadow-xl">立即聯絡我們</a>

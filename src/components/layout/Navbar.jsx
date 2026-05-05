@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import logo from '@/assets/image/logo.png';
 
 export const Navbar = ({ scrolled }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -6,7 +7,7 @@ export const Navbar = ({ scrolled }) => {
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 bg-black/40 backdrop-blur-xl border-b border-white/10' : 'py-2 bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 <div className="text-2xl font-black tracking-tighter bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent cursor-pointer">
-                   <img src='src/assets/image/logo.png' alt='磐石科技' width='160px' />
+                   <img src={logo} alt='磐石科技' width='160px' />
                 </div>
                 <div
                     className="hidden md:flex gap-8 text-sm font-semibold tracking-wide items-center text-slate-200">

@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 export const BusinessSection = () => {
+    const { t } = useTranslation('translation', { keyPrefix: 'business' });
 
     const fadeInVariant = {
         hidden: {opacity: 0, y: 20},
@@ -12,29 +14,26 @@ export const BusinessSection = () => {
     const BUSINESS_SOLUTIONS = [
         {
             id: '01',
-            title: '第一章：從寂靜到綻放，建立您的數位門戶',
-            subtitle: 'The First Impression',
-            desc: '在浩瀚的數位海域中，優秀的品牌不應被埋沒。我們專注於為企業打造最具溫度的「第一接觸點」，不僅是美觀的視覺呈現，更是一場關於品牌價值的深度對話。透過精準的搜尋佈局，讓您的潛在客戶在最需要的時刻，第一眼就與您的品牌相遇，開啟無限可能的對話窗。',
+            title: t('1.title', '第一章：從寂靜到綻放，建立您的數位門戶'),
+            desc: t('1.desc', '在浩瀚的數位海域中，優秀的品牌不應被埋沒。我們專注於為企業打造最具溫度的「第一接觸點」，不僅是美觀的視覺呈現，更是一場關於品牌價值的深度對話。透過精準的搜尋佈局，讓您的潛在客戶在最需要的時刻，第一眼就與您的品牌相遇，開啟無限可能的對話窗。'),
             image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop',
-            tags: ['品牌辨識', '精準導入', '全平台適配'],
+            tags: [t('1.tags.1', '品牌辨識'), t('1.tags.2', '精準導入'), t('1.tags.3', '全平台適配')],
             color: 'from-cyan-500/20 to-transparent'
         },
         {
             id: '02',
-            title: '第二章：轉化繁瑣為純粹，賦能企業運轉核心',
-            subtitle: 'The Heart of Operation',
-            desc: '真正的成長來自於內部的從容。我們將混亂的數據碎片轉化為清晰的決策指引，把重複的行政庶務交付給智能自動化。透過深度梳理您的核心業務，我們為您構建一套會思考的管理系統，讓您的團隊能從日常雜事中解放，將精力聚焦在最具創造力的客戶關係與戰略決策上。',
+            title: t('2.title', '第二章：轉化繁瑣為純粹，賦能企業運轉核心'),
+            desc: t('2.desc', '真正的成長來自於內部的從容。我們將混亂的數據碎片轉化為清晰的決策指引，把重複的行政庶務交付給智能自動化。透過深度梳理您的核心業務，我們為您構建一套會思考的管理系統，讓您的團隊能從日常雜事中解放，將精力聚焦在最具創造力的客戶關係與戰略決策上。'),
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop',
-            tags: ['營運自動化', '決策智慧化', '內部賦能'],
+            tags: [t('2.tags.1', '營運自動化'), t('2.tags.2', '決策智慧化'), t('2.tags.3', '內部賦能')],
             color: 'from-blue-500/20 to-transparent'
         },
         {
             id: '03',
-            title: '第三章：突破侷限，共創持續生長的價值',
-            subtitle: 'Sustainable Growth',
-            desc: '商業的終點從不是成交，而是長遠的共鳴。我們協助品牌突破既有的市場邊界，利用全域行銷策略將短暫的流量沈澱為誠摯的品牌追隨者。這是一場動態的增長實驗，我們與您並肩作戰，在多變的市場趨勢中尋找最穩定的成長曲線，確保品牌在數位浪潮中始終保持旺盛的生命力。',
+            title: t('3.title', '第三章：突破侷限，共創持續生長的價值'),
+            desc: t('3.desc', '商業的終點從不是成交，而是長遠的共鳴。我們協助品牌突破既有的市場邊界，利用全域行銷策略將短暫的流量沈澱為誠摯的品牌追隨者。這是一場動態的增長實驗，我們與您並肩作戰，在多變的市場趨勢中尋找最穩定的成長曲線，確保品牌在數位浪潮中始終保持旺盛的生命力。'),
             image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop',
-            tags: ['全域增長', '價值傳遞', '市場突圍'],
+            tags: [t('3.tags.1', '全域增長'), t('3.tags.2', '價值傳遞'), t('3.tags.3', '市場突圍')],
             color: 'from-purple-500/20 to-transparent'
         }
     ];
@@ -43,10 +42,9 @@ export const BusinessSection = () => {
         <section id="business" className="max-w-7xl mx-auto px-6 py-32 relative z-10">
             <motion.div initial="hidden" whileInView="visible" viewport={{once: true, margin: "-100px"}}
                         variants={fadeInVariant} className="text-center mb-32">
-                <h2 className="text-4xl md:text-5xl text-white font-bold mb-6">企業數位整合方案</h2>
+                <h2 className="text-4xl md:text-5xl text-white font-bold mb-6">{ t('baseTitle', '企業數位整合方案')}</h2>
                 <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
-                    針對成長型企業設計，我們串聯品牌門面、數據管理到市場增長，<br
-                    className="hidden md:block"/> 提供全方位的數位轉型支撐。
+                    { t('baseDesc', '針對成長型企業設計，我們串聯品牌門面、數據管理到市場增長，提供全方位的數位轉型支撐。')}
                 </p>
             </motion.div>
 
@@ -88,9 +86,6 @@ export const BusinessSection = () => {
                                 <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
                                     {solution.title}
                                 </h3>
-                                <p className="text-cyan-400/80 font-bold uppercase tracking-[0.2em] text-xs">
-                                    {solution.subtitle}
-                                </p>
                             </div>
 
                             <p className="text-slate-300 text-lg leading-relaxed opacity-90">
